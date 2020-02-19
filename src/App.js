@@ -1,13 +1,13 @@
-import React from "react";
+import React, {useEffect} from "react";
 import "./App.css";
+import CardPage from './Components/Card/CardPage';
 
-function App() {
+
+function App() {  
   return (
     <div className="App">
-      <p>
-        Read through the instructions in the README.md file to build your NASA
-        app! Have fun 🚀!
-      </p>
+      {/* <NavBar /> */}
+      <CardPage />
     </div>
   );
 }
