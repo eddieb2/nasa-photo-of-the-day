@@ -1,14 +1,17 @@
 import React from 'react';
-import Title from './Title';
-import Image from './Image';
-import Description from './Description';
+import './Card.css'
 
 const Card = (props) => {
   return(
-    <div className="card">
-      <Description />
-      <Image />
-      <Title />
+    <div className="cardContainer">
+      <h1>
+        {props.title}
+      </h1>
+      <img className="cardImg" src={props.image} alt=""/>
+      <div>
+        <h3>{props.date}</h3>
+        <p>{props.explanation}</p>
+      </div>
     </div>
   );
 }
