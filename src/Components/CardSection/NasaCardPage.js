@@ -1,9 +1,9 @@
 import React, {useState, useEffect} from "react";
-import Card from './Card'
+import NasaCardSection from './NasaCardSection'
 import axios from 'axios'
 import './Card.css'
 
-const CardPage = () => {
+const NasaCardPage = () => {
   const [data, setData] = useState(false);
   
   useEffect(() => {
@@ -21,7 +21,7 @@ const CardPage = () => {
       <p>...loading</p>
     }
     {data &&     
-      <Card 
+      <NasaCardSection
         title={data.title}
         explanation={data.explanation}
         image={data.hdurl}
@@ -32,4 +32,4 @@ const CardPage = () => {
   );
 }
 
-export default CardPage;
+export default NasaCardPage;
