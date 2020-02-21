@@ -15,6 +15,10 @@ const CardSubtitleExp = styled(CardSubtitle)`
   margin-bottom: 2%;
 `;
 
+const CardTextFormat = styled(CardText)`
+   white-space: nowrap;
+`
+
 const NasaCardSection = (props) => {
   return(
     <SectionOne>
